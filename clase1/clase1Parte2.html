@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Clase de HTML" />
+    <meta name="keywords" content="html, css, fullstack" />
+    <meta http-equiv="language" content="es" />
+    <!-- Robots, Indica a los robots del motor de búsqueda que no sigan los enlaces de la página y quite la web
+    del índice del motor de búsqueda (nofollow, noindex). Es opcional, por defecto esta en follow, index. -->
+    <meta name="robots" content="nofollow, noindex" />
+    <!-- Refresh, provoca que los visitantes de la página sean redirigidos al sitio google después de x=3600 segundos. -->
+    <meta http-equiv="refresh" content="3600; url=http://www.google.com/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Enzo Demian Aramayo, solojuegojax@gmail.com" />
+    <title>Clase 1 Parte 2</title>
+    <!-- Página para construir favicons https://favicon.io/ -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Heading 1 es un elemento de bloque -->
+    <h1>Clase de HTML</h1>
+    <!-- Con SHIFT + Inicio/Fin nos desplazamos por el elemento;
+    Paragraph tambien es un elemento de bloque;
+    Strong/Emphasis no es una etiqueta en bloque, por lo tanto no hace un salto de linea -->
+    <p>
+        Lorem ipsum <strong><em>dolor</em></strong
+      >, sit amet consectetur adipisicing elit. Obcaecati voluptatem, nihil quas
+      dolores pariatur explicabo officiis similique modi, commodi quam debitis!
+      Similique magni provident error, laboriosam expedita adipisci aut
+      voluptatum.
+    </p>
+    <!-- Teclas rápidas para comentar ALT + SHIFT + A -->
+    <!-- Sección titulos -->
+    <h1>Títulos principal</h1>
+    <!-- Barra de separación <hr> -->
+    <hr />
+    <h2>Título secundario</h2>
+    <h3>Título de tercer nivel</h3>
+    <h4>Título de cuarto nivel</h4>
+    <h5>Título de quinto nivel</h5>
+    <h6>Título de sexto nivel</h6>
+    <p>Lorem ipsum dolor sit ...</p>
+
+    <!-- Listas -->
+    <h2>Listas ordenadas</h2>
+    <h4>La lista debe ir desde la a hasta la d</h4>
+
+    <ol type="a">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <h4>La lista debe ie desde la laetra g hasta la j</h4>
+
+    <ol type="a" start="7">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <h4>La lista debe ir desde la laetra z hasta la w (descendente)</h4>
+
+    <ol type="a" start="26" reversed>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+    <h4>La lista debe ir desde 1 hasta 4</h4>
+
+    <ol type="1">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <h4>La lista debe ir desde 33 hasta 36</h4>
+
+    <ol type="1" start="33">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <h4>La lista debe ir desde 100 hasta 97 (descendente)</h4>
+
+    <ol type="1" start="100" reversed>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <h2>Listas Desordenadas</h2>
+
+    <h4>La lista debe ser de tipo disco</h4>
+
+    <ul style="list-style-type: disc">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <h4>La lista debe ser de tipo circulo</h4>
+
+    <ul style="list-style-type: circle">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <h4>La lista debe ser de tipo cuadrado</h4>
+
+    <ul style="list-style-type: square">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <h4>Lista de definiciones</h4>
+
+    <p>Bebidas</p>
+    <dl>
+      <dt>Café</dt>
+      <dd>Bebida de origen vegetal</dd>
+      <dt>Leche</dt>
+      <dd>Bebida de origen animal</dd>
+    </dl>
+
+    <!-- Tablas -->
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+      </tr>
+      <tr>
+        <td>Enzo Demian</td>
+        <td>Aramayo</td>
+      </tr>
+      <tr>
+        <td>I'm</td>
+        <td>Peluchín</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>LU</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6999</td>
+          <td>El</td>
+          <td>Lucas</td>
+        </tr>
+        <tr>
+          <td>7000</td>
+          <td>El</td>
+          <td>Kevin</td>
+        </tr>
+        <tr>
+          <td>7001</td>
+          <td>Mi amigo</td>
+          <td>Prrotsky</td>
+        </tr>
+        <tr>
+          <td>7002</td>
+          <td>El</td>
+          <td>Enzo</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Listado de los alumnos mas picantes</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <!-- Elementos genericos -->
+    <div>
+      Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Eius
+      doloribus earum quidem animi maxime numquam, at excepturi odit? Quibusdam
+      quas maxime in laudantium expedita vitae totam fuga aliquid, repellat
+      excepturi?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, sapiente.
+      Officia ad ex iure quaerat tenetur adipisci tempora, quas esse culpa amet
+      rem libero impedit quos id, molestiae quae mollitia?
+    </div>
+
+    <!-- Enlaces -->
+
+    <ul>
+      <li>
+        <a
+          href="http://github.com/truchito1234"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ir a mi GitHub</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://mpago.la/2NyZhDH"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Pagar</a
+        >
+      </li>
+      <li>
+        <a href="./pages/listado-alumnos.html">Ir a listado alumnos</a>
+      </li>
+      <li>
+        <a href="./clase1.html">Volver atras</a>
+      </li>
+    </ul>
+
+    <!-- Iframes -->
+    <h3>Yoko Oginome - You're My Life</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/QSzhe9HvMII"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <h3>六本木心中</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414896.92078037286!2d139.19948270174012!3d35.667590169558636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sciudad%20de%20Tokio%2C%20Tokio%2C%20Jap%C3%B3n!5e0!3m2!1ses!2sar!4v1658458191166!5m2!1ses!2sar"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>

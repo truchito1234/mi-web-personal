@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header></header>
+    <main id="principal">
+        <h1>Practica 1</h1>
+        <hr />
+        <form action="">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" /><br />
+                <label for="socio">Eres socio?</label><br />
+                <label for="si">Si</label>
+                <input type="radio" name="socio" id="si" value="s" />
+                <label for="no">No</label>
+                <input type="radio" name="socio" id="no" value="n" /><br />
+                <label for="id-email">Email</label>
+                <input type="email" name="email" id="id-email" /><br />
+                <label for="id-contrasena">Contraseña</label>
+                <input type="password" name="contrasena" id="id-contrasena" /><br />
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+                <label for="edad">Edad</label>
+                <select id="grupo-edad" name="grupo-edad">
+            <option value="menor" selected>Menor de 18</option>
+            <option value="mayor">Mayor de 18</option></select
+          ><br />
+          <label for="fecha-hora">Selecciona fecha y hora de reserva</label
+          ><br />
+          <input
+            type="datetime-local"
+            name="fecha-hora"
+            id="fecha-hora"
+          /><br />
+          <textarea
+            name="texto-reserva"
+            id="texto-reserva"
+            cols="30"
+            rows="10"
+            placeholder="uwu"
+          ></textarea>
+        </fieldset>
+        <input
+          type="checkbox"
+          name="terminos-condiciones"
+          id="id-terminos-condiciones"
+        />
+        <label for="id-terminos-condiciones">Acepto las condiciones</label
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+      <h1>Practica 2</h1>
+      <hr />
+      <form action="">
+        <label for="id-nombre">Nombre</label>
+        <input type="text" name="nombre" id="id-nombre" /><br />
+        <label for="id-apellido">Apellido</label>
+        <input type="text" name="apellido" id="id-apellido" /><br />
+        <label for="id-telefono">Telefono</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="id-telefono"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        /><br />
+        <label for="grupo-campus">Campus</label>
+        <select id="grupo-campus" name="grupo-campus">
+          <option value="agrarias" selected>Agrarias</option>
+          <option value="ingeniería">Ingeniería</option>
+          <option value="economicas">Ciencias Economicas</option>
+          <option value="humanidades">Ciencias Sociales y Humanidades</option>
+          <option value="minas">Escuela de Minas</option>
+        </select>
+                <br />
+                <textarea name="mensaje" id="id-mensaje" cols="50" rows="10" placeholder="Mensaje"></textarea
+        ><br />
+        <input
+          type="checkbox"
+          name="politica-privacidad"
+          id="id-politica-privacidad"
+        />
+        <label for="id-politica-privacidad"
+          >Acepto la politica de privacidad</label
+        >
+        <br />
+        <div class="box">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <ul>
+        <li><a href="../index.html">Ir al Menú principal</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>Enzo Demian Aramayo 2022</p>
+    </footer>
+    <!-- <script src="./js/opciones.js"></script> -->
+  </body>
+</html>

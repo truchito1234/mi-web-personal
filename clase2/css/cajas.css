@@ -1,0 +1,66 @@
+* {
+    margin: 16px 0px;
+    padding: 0;
+}
+
+body {
+    padding: 0 30px;
+}
+
+h1 {
+    border-bottom: blue solid 2px;
+}
+
+h2 {
+    border: 2px solid gray;
+}
+
+.lista-datos {
+    border-top: 4px dotted red;
+    border-bottom: 4px dotted red;
+    padding-left: 30px;
+}
+
+.lista-contenido {
+    border: 2px dashed #0F0;
+    padding-left: 30px;
+}
+
+.segunda-seccion {
+    margin-top: 90px;
+    width: 50%;
+}
+
+#heading1,
+#heading2 {
+    border: none;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+input {
+    margin: 2px;
+}
+
+legend,
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.boton {
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    padding: 6px;
+}
+
+@media (max-width: 800px) {
+    .segunda-seccion {
+        width: 100%;
+    }
+}

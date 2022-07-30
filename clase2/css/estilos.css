@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 2px;
+}
+
+footer>p {
+    text-align: center;
+}
+
+
+/* Comentario(ALT+SHIFT+A): class para poner el contenido en color verde */
+
+.verde {
+    color: green;
+}
+
+img {
+    opacity: 0.5;
+}
+
+section {
+    background-color: beige;
+}
+
+.padre {
+    font-size: 38px;
+}
+
+.hijo {
+    font-size: 0.5em;
+}
+
+.parrafo {
+    font-family: Arial;
+    text-transform: uppercase;
+}
