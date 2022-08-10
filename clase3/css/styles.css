@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background: #cae9ff;
+    color: #ffffff;
+}
+
+
+/* TODO Header */
+
+header {
+    height: 30vh;
+    margin: 10px;
+    background: #1b4965;
+    position: relative;
+}
+
+#navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navbar ul {
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover {
+    background: #bee9e8;
+    opacity: 1;
+}
+
+#navbar .logo {
+    margin: 20px 0 10px 0;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    float: right;
+}
+
+
+/* TODO Home */
+
+#home {
+    margin: 10px;
+    background: #1b4965;
+}
+
+#home .titulos {
+    float: left;
+    width: 50%;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.imagen-titulo {
+    float: right;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-titulo img {
+    padding: 10px;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+
+/* TODO Noticias */
+
+#noticias {
+    margin: 10px;
+    background: #1b4965;
+}
+
+.noticias {
+    float: left;
+    width: 55%;
+    padding-top: 6px;
+}
+
+.imagen-noticias {
+    float: left;
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-noticias img {
+    padding: 10px;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+.noticias .large {
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+
+/* Contact, no le voy a mentir en esta parte copie y pegué nomas T_T */
+
+#contacto {
+    margin: 10px;
+    background: #1b4965;
+}
+
+.contact-form {
+    float: right;
+    width: 45%;
+    padding: 20px;
+}
+
+.contact-title {
+    float: left;
+    width: 55%;
+    padding-top: 160px;
+    text-align: center;
+}
+
+
+/* label */
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none;
+}
+
+
+/* Boton Form */
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-light {
+    background: #5fa8d3;
+    border: 1px solid #cae9ff;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-light:hover {
+    background: #fff;
+    border: 1px solid black;
+    color: #1b4965;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1b4965;
+    font-weight: bold;
+}
+
+
+/* Los media Query */
+
+@media screen and (max-width: 900px) {
+    h1,
+    h2,
+    p,
+    a,
+    label,
+    button {
+        font-size: 0.9rem;
+    }
+    #home .titulos {
+        padding-top: 10px;
+    }
+}
+
+
+/* JaabaScrit Button to, lo copie y pegue de  mis otros trabajos u.u */
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    right: 25px;
+    bottom: 17px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background-color: #5fa8d3;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 350ms;
+    -o-transition: opacity 350ms;
+    transition: opacity 350ms;
+    border-style: none;
+}
+
+.back-to-top i {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin-top: -15px;
+    margin-left: -6px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.back-to-top.reveal {
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    opacity: 30;
+    filter: alpha(opacity=3000);
+}
+
+.back-to-top:hover {
+    background-color: #1b4965 !important;
+}
